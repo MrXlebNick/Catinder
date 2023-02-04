@@ -20,9 +20,13 @@ The app has a lot to improve in the future (mostly because this is my first expe
 The list of future improvements includes but is nt limited to:
 
 * Proper DI to avoid dependency chains
-* Better UI (and especially placeholder/loading animations)
+* Better UI (and especially placeholder/loading animations, now the layout is a bit jumpy)
 * Better tests (e.g. at this moment the project has zero integration tests)
 * Better persistent storage system (SharedPreferences work just fine for key-value pairs, but the
   current solution is not scalable)
 * Better project structure (e.g. main.dart is pretty messy now for such a small project)
 * Handling of corner cases (connection error, backend down, etc)
+* Allow users to upload their own images to private library
+
+[device-2023-02-04-062601.webm](https://user-images.githubusercontent.com/10089784/216748415-fa95373b-2d9f-48f4-a284-4355c3010549.webm)
+
