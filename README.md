@@ -14,6 +14,13 @@ The user can also reset the dislikes, in which case the app will "forget" all di
 will start showing the cats from the very first one. Also, due to hardware limitations the app has
 not been tested on iOS (only on Android)
 
+## Architecture
+
+As a force of habit, a simplified MVVM was chosen for this project:
+View <- ViewModel <- Repository
+With Flutter, I'm not quite sure that ViewModel is a correct term, but it was still used to help
+draw analogies for mobile developers.
+
 ## Future development
 
 The app has a lot to improve in the future (mostly because this is my first experience in Flutter).
