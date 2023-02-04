@@ -34,6 +34,7 @@ The list of future improvements includes but is nt limited to:
 * Better project structure (e.g. main.dart is pretty messy now for such a small project)
 * Handling of corner cases (connection error, backend down, etc)
 * Allow users to upload their own images to private library
+* Allow users to swipe left/right instead of buttons
 
 [device-2023-02-04-062601.webm](https://user-images.githubusercontent.com/10089784/216748415-fa95373b-2d9f-48f4-a284-4355c3010549.webm)
 
