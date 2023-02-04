@@ -136,11 +136,13 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.max,
-          children: <Widget>[
-            Text('#$_counter', style: const TextStyle(fontSize: 32)),
+          children: [
+            _counter < 0
+                ? null
+                : Text('#$_counter', style: const TextStyle(fontSize: 32)),
             FadeInImage.memoryNetwork(
               height: 300,
-                image: 'http://placekitten.com/300/300?image=$_counter',
+              image: 'http://placekitten.com/300/300?image=$_counter',
               placeholder: kTransparentImage,
             ),
             Padding(
@@ -177,7 +179,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             onPressed: _like, child: const Text("👍"))),
                   ],
                 )),
-          ],
+          ].whereType<Widget>().toList(),
         ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
