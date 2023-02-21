@@ -15,10 +15,10 @@ void main() {
     var output = element.output;
     test('getNextCat: $input -> $output when initially $initialDbState',
         () async {
-      var repository = MockCatLikesRepository({1});
+      var repository = MockCatLikesRepository(initialDbState);
       var viewModel = ImplCatinderViewModel(repository);
 
-      expect(await viewModel.getNextCat(0), 2);
+      expect(await viewModel.getNextCat(input), output);
     });
   });
 }
